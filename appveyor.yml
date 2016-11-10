@@ -20,6 +20,6 @@ on_success:
   - git config --global user.email "appveyor@noreply.vianett.io"
   - git config --global user.name "AppVeyor"
   - git commit -am AppVeyor
-  - git tag v%appveyor_build_version%
+  - git commit -am "AppVeyor release %appveyor_build_version%"
   - git push -u origin v%appveyor_build_version%
 
